@@ -1,0 +1,291 @@
+/********************************************
+General
+********************************************/
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.25em;
+}
+
+#wrapper {
+    /*max-width is related to width. But instead of width, max-width that it can be smaller for moble devices tablets.*/
+    max-width: 940px;
+    /*Margin 0 is for ALL sides*/
+    margin: 0 auto;
+    /*Values first one is top and bottom. Second one is left and right*/ 
+    padding: 0 5%;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+h3 {
+    margin:0 0 1em 0;
+}
+/********************************************
+Header
+********************************************/
+header {
+    font-family: 'Caveat', cursive;
+    float: left;
+    margin: 0 0 30px 0;
+    padding: 5px 0 0 0;
+    width: 100%;
+    font-size: 1em;
+}
+/*our name and description of who we are.*/
+#logo {
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Caveat', cursive;
+    margin: 15px 0;
+}
+
+h2 {
+    /*!st value is for the top. Second value is for left and right. 3rd value is for the bottom*/
+    margin: -5px 0 0;
+    font-weight: normal;
+}
+header img {
+    width:150px;
+    height:150px;
+}
+/********************************************
+Navigation
+********************************************/
+nav {
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px 0 0;
+    background-color: yellow;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 20px 0 0;
+    font-size: 1.5em;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    font-weight: 800;
+    padding: 15px 10px;
+}
+/********************************************
+Footer
+********************************************/
+footer{
+    font-size: 1em;
+    text-align: center;
+    padding-top: 50px;
+    color: graytext;
+    clear: both;
+}
+.social-media-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 5px;
+}
+footer img {
+    width:64px;
+    height:64px;
+}
+
+/********************************************
+Home Portfolio
+********************************************/
+.intro {
+    text-align: center;
+    font-size: 2em;
+}
+intro-title {
+    border: black;
+}
+small-intro {
+    font-size: 1em;
+    text-align: center;
+}
+/********************************************
+Page Portfolio
+********************************************/
+#gallery {
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+    border-radius: 15%;
+}
+#gallery li {
+    display: block;
+    border-radius: 15%;
+    margin-bottom: 5%;
+    float:none;
+    width: 45%;
+    margin: 5%;
+    //background-color: red;
+}
+
+#gallery li a p{
+    margin:  0;
+    padding: 5%;
+    font-size: .75em;
+    color: white;
+    font-weight: 900;
+}
+.info{
+    float: right;
+    margin-right: 300px;
+    margin-bottom: 0px;
+    list-style: none;
+    background-color: #602320;
+}
+/********************************************
+About Portfolio
+********************************************/
+.profile-photo {
+    display: block;
+    max-width: 0 auto 30px;
+    border-radius: 15%;
+    width: 40%;
+    margin-bottom: 2.5%;
+}
+
+/********************************************
+Contact Portfolio
+********************************************/
+.contact-info{
+  list-style:none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+    display:block;
+    min-height: 20px;
+    /* by default it will always repeat, background images*/
+    background-repeat: no-repeat;
+    /*re-size the background img*/
+    background-size: 20px 20px;
+    padding: 0 0 0 30px;
+    margin: 0 0 10px;
+}
+.contact-info li.mail a{
+    background-image: url('../img/email.png');
+}
+.contact-info li.facebook a{
+    background-image: url('../img/facebook_icon.png');
+}
+/********************************************
+Colors
+********************************************/
+body {
+    background-color: tomato;
+    color: black;
+}
+a {
+    color:  #f57f17;
+}
+header{
+    background: black;   
+}
+h1, h2 {
+    color: whitesmoke;
+}
+
+nav {
+    background-color: white;
+    text-decoration-color:whitesmoke;
+}
+nav a, nav a:visited{
+    color: orange;
+}
+
+nav a.selected, nav a:hover {
+    color: white;
+} 
+
+
+/********************************************
+Media Querie
+********************************************/
+/*TWO COLUMN LAYOUT*/
+@media screen and (min-width: 480px){
+    #primary {
+        width:50%;
+        float: left;
+    }
+    #secondary {
+        width: 40%;
+        float: right;
+    }
+    /*THREE COLUMN LAYOUT FOR OUR PORTFOLIO*/
+    #gallery li {
+        width: 28.3333%;
+    }
+    #gallery li:nth-child(4n) {
+        clear: left;
+    }
+    /*ABOUT PAGE*/
+    .profile-photo {
+        
+        margin: 0 5% 80px 0;
+    }
+    
+} 
+
+@media screen and (min-width: 660px){
+    /*NAV*/
+    nav{
+        background: none;
+        float:right;
+        font-size:1.5em;
+        margin-right: 5%;
+        text-align: center;
+        /*width: 45%;*/
+    }
+    #logo {
+        float: left;
+        margin-left: 5%;
+        text-align: left;
+        width: 45%;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+    header {
+        border-bottom: 10px solid black;
+        margin-bottom: 60px;
+    }
+}
+ header, main, footer, nav {
+      padding-left: 240px;
+    }
+
+    @media only screen and (max-width : 992px) {
+      header, main, footer {
+        padding-left: 0;
+      }
+    }
+    .font-small-nav {
+        font-size: 75%;
+    }
+          
+

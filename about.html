@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SportsFun</title>
+        <!--Browsers read top to bottom. So we put custom files after the normalizer.-->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/materialize.css">
+        <link rel="stylesheet" href="css/materialize.min.css">
+    </head>
+    <!--Parts of site content-->
+    <body>
+        <!--Headings-->
+        <header class="header">
+            <!--Anchor Tag: Anchors the URL, Hyper Link Reference -->
+            <a href="index.html" id="logo">
+                <h1>SportsFun</h1>
+                <h2>All the info you need about sports</h2>
+            </a>
+            <!--nav is short for navigation, Senantic Statement-->
+            <nav>
+                <!--Unordered List: Bullet List-->
+                <ul>
+                    <!--List Item.-->
+                    <li><a href="index.html">News</a></li>
+                    <li><a href="about.html" class="selected">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="mlb.html">MLB</a></li>
+                    <li><a href="nba.html">NBA</a></li>
+                    <li><a href="nfl.html">NFL</a></li>
+                </ul>
+            </nav>
+            <ul id="slide-out" class="side-nav fixed ">
+            <li class="black"><a class="white-text" href="index.html">Official Sports Websites</a></li>
+            <li><a href="http://mlb.mlb.com/home">MLB</a></li>
+            <li><a href="http://www.nba.com/">NBA</a></li>
+            <li><a href="http://www.nfl.com/">NFL</a></li>
+        </ul>
+        </header>
+        <div id="wrapper">
+            <section>
+                <img src="img/cover.jpg" alt="My Picture" class="profile-photo">
+                <h3>About us</h3>
+                <p>Hello! We are SportsFun! All the info you need about sports on this page. We have news about MLB, NFL, and NBA. Be sure to go check it out! Any questions? Visit our contact page. </p>
+                <p>Follow us on Instagram! <a href="https://instagram.com/SportsFun/">@SportsFun</a></p>
+                <p>Follow us on Twitter! <a href="https://instagram.com/SportsFun/">@SportsFun</a></p>
+            </section>
+            <footer>
+                <!--Absolute Path when it is absolutely necessary. Relative Paths whenever we can. -->
+                <a href="http://instagram.com/peter_lu101/"><img src="img/gram.gif" alt="Instagram Profile" class="social-media-icon"></a>
+                <a href="https://twitter.com/peterlu101"><img src="img/twitter.png" alt="Twitter Account" class="social-media-icon"></a>
+      
+                <p>&copy; 2016 Christian&Peter</p>
+            </footer>
+        </div>
+    </body>
+</html>
